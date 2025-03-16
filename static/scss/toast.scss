@@ -1,0 +1,24 @@
+.toast {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 20%;
+	margin: 10px;
+	pointer-events: none;
+	// .info__body
+	&__body {
+		padding: 5px 10px;
+		border-radius: 5px;
+		margin-bottom: 5px;
+		animation: info 3s linear;
+
+		&-ok {
+			background-color: rgba($color: #044d07, $alpha: .8);
+			color: #21c926;
+		}
+		&-error {
+			background-color: rgba($color: #4d0407, $alpha: .8);
+			color: #c92126;
+		}
+	}
+}

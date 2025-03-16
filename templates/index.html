@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resizer</title>
+	<link rel="stylesheet" href="/static/css/null.css">
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link rel="stylesheet" href="/static/css/toast.css">
+	<script>
+		let data = JSON.parse('{{ . }}') || []
+		// console.log(data);
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="page">
+			<div class="container">
+				<div class="page__body">
+					<div class="page__title">
+						<h1>Image uploader and resizer</h1>
+					</div>
+
+					<div class="page__row info">
+						<div class="info__row">
+
+						</div>
+						<div class="info__row">
+							<div data-btn="file" class="info__btn btn">Upload and resize</div>
+							<label class="file btn">
+								<input type="file" class="file__input input">
+								<span class="file__btn"></span>
+								<span class="file__placeholder">Choose file</span>
+								<span class="file__text">file selected</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="page__row info">
+						<div class="info__row">
+
+						</div>
+						<div class="info__row">
+							<div data-btn="link" class="info__btn btn">Upload and resize</div>
+							<input type="text" placeholder="link to image" class="info__input input">
+						</div>
+					</div>
+
+					<div class="page__row info">
+						<div class="info__row">
+
+						</div>
+						<div class="info__row">
+							<input type="text" id="url_link" placeholder="url link" class="info__input input">
+						</div>
+					</div>
+
+					<div class="page__row">
+						<div class="page__title">
+							<h2>Gallery</h2>
+						</div>
+						<div class="gallery"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/static/js/toast.js"></script>
+	<script src="/static/js/sript.js"></script>
+</body>
+
+</html>

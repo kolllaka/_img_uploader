@@ -1,0 +1,9 @@
+db:
+  path: ./storage/image.db
+files:
+  clear_delay: 24 # Hours
+images:
+  save_folder: "uploads"
+  delay_expires: 24 # Hours
+  width: 100
+  height: 0
